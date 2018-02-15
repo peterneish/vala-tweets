@@ -28,7 +28,7 @@ vala <- readRDS("data/vala.rds")
 ```
 
 # Introduction
-An analysis of tweets from VALA 2018. Code is available on [GitHub](https://github.com/peterneish/vala-twitter).
+An analysis of tweets from VALA 2018. Code is available on [GitHub](https://github.com/peterneish/vala-tweets).
 
 `r nrow(vala)`
 tweets were collected using the `rtweet` R package:
@@ -137,7 +137,7 @@ write_graph(vala_replies, file = "data/vala_replies.graphml",
             format = "graphml")
 ```
 
- ``` # [![replies](data/vala_replies.png)](data/vala_replies.png) ```
+ [![replies](data/replies.svg)](data/replies.svg)
 
 ## Mentions
 The "mentions network", where users mention other users in their tweets.
@@ -160,7 +160,7 @@ write_graph(vala_mentions, file = "data/vala_mentions.graphml",
             format = "graphml")
 ```
 
-``` # [![mentions](data/vala_mentions.png)](data/vala_mentions.png) ```
+[![mentions](data/mentions.svg)](data/mentions.svg)
 
 # Retweets
 ## Retweet proportion
