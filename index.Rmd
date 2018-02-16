@@ -124,7 +124,7 @@ coloured by page rank.
 
 Click to view image.
 
-```{r reply-network, eval=FALSE}
+```{r reply-network}
 vala_replies <- vala %>% 
   filter(!is.na(in_reply_to_status_screen_name)) %>% 
   select(screen_name, in_reply_to_status_screen_name) %>% 
@@ -145,7 +145,7 @@ Filtered for k-core >= 4 and coloured by modularity class.
 
 Click to show image.
 
-```{r mentions-network, eval=FALSE}
+```{r mentions-network}
 vala_mentions <- vala %>% 
   filter(!is.na(mentions_screen_name)) %>% 
   select(screen_name, mentions_screen_name) %>% 
